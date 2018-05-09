@@ -7,27 +7,30 @@
     "start": "webpack-dev-server --open",
     "build": "webpack",
     "watch": "npm run build -- --watch",
+    "server": "static build",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/McReader/spring-js-cources-2018.git"
+    "url": "git+https://github.com/Artifex-ag/spring-js-cources-2018.git"
   },
-  "author": "dzianis_roi@epam.com",
+  "author": "Artifex-ag@mail.ru",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/McReader/spring-js-cources-2018/issues"
+    "url": "https://github.com/Artifex-ag/spring-js-cources-2018/issues"
   },
-  "homepage": "https://github.com/McReader/spring-js-cources-2018#readme",
+  "homepage": "https://github.com/Artifex-ag/spring-js-cources-2018#readme",
   "dependencies": {
     "react": "16.3.1",
     "react-dom": "16.3.1",
     "redux": "^3.7.2"
   },
   "devDependencies": {
+    "@babel/plugin-transform-spread": "^7.0.0-beta.46",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
@@ -37,10 +40,11 @@
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
     "style-loader": "^0.20.3",
     "webpack": "4.1.1",
-    "webpack-cli": "^2.0.11",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
   }
 }
