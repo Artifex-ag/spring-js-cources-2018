@@ -17,8 +17,8 @@ export class Form extends Component {
   render() {
     return (
       <div className="add-todo">
-        <input className="add-todo__input" ref={this.titleInput} />
-        <textarea className="add-todo__input" ref={this.descriptionInput} />
+        <input className="add-todo__input" placeholder="Enter 'Todo' title" ref={this.titleInput} />
+        <textarea className="add-todo__input" placeholder="Enter  'Todo'  description" ref={this.descriptionInput} />
         <button className="add-todo__btn" onClick={this.handleClick}>
           <i className="fa fa-plus" />
         </button>

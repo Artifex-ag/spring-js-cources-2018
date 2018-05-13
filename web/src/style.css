@@ -52,22 +52,26 @@ body {
 .todo-app {
   min-width: 380px;
   min-height: 480px;
+  max-width: 100%;
   max-height: 100%;
-  background: #fafafa;
+  background: #28767a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: 0 0 5px rgba(25, 25, 25, 0.25);
   padding: 3rem;
 }
 
 .todo-title {
   margin-bottom: auto;
+  font:  normal small-caps 72px verdana;
+  color: #a2e04c;
   margin-top: 0;
   line-height: 1;
 }
+
 
 .todo-list {
   font-size: 100%;
@@ -75,6 +79,9 @@ body {
   width: 100%;
   overflow-x: hidden;
   margin-top: 2rem;
+  background: #edf4a8;
+  border-radius: 20px;
+  padding: 1rem;
 }
 
 .todo {
@@ -119,6 +126,7 @@ body {
   position: relative;
   opacity: 1;
   text-transform: capitalize;
+  font:  bold small-caps 14px verdana;
   cursor: pointer;
   transition: opacity 0.25s ease-out;
 }
@@ -214,7 +222,7 @@ body {
 }
 .add-todo__btn {
   text-align: center;
-  color: #fafafa;
+  color: #a2e04c;
   line-height: 1;
   position: absolute;
   font-size: 150%;
@@ -223,7 +231,7 @@ body {
   border-radius: 50%;
   width: 55px;
   height: 55px;
-  background: #2ecc71;
+  background: #003563;
   opacity: 0;
   -webkit-transform: translate(0, -50%) scale(0) rotate(180deg);
   transform: translate(0, -50%) scale(0) rotate(180deg);
@@ -253,13 +261,14 @@ body {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   background: #e8ebed;
+  font-family: arial;
   margin: 0;
   outline: 0;
-  border: 2px solid #e8ebed;
+  border: 1px solid dimgrey;
   transition: background 0.25s ease-out;
 }
 .add-todo__input:focus {
-  background: none;
+  background:  #e8ebed;
 }
 .add-todo__input:focus + .add-todo__btn {
   opacity: 1;
@@ -296,4 +305,11 @@ body {
 }
 .fa-heart-active {
   color: #e74c3c;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+.fa-heart-passive {
+  color: #b5c181;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
 }

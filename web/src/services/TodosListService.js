@@ -48,6 +48,17 @@ export default class TodosListService {
       .then(() => todoId);
   }
 
+    // removeTodoItem(todoId) {
+    //     return this.todosListDAO.getAllTodos()
+    //         .then((todos) => {
+    //             const index = this.todosListDAO.findTodoIndex(todoId, todos);
+    //             const result = [...todos];
+    //             const removedItems = result.splice(index, 1);
+    //             return this.todosListDAO.saveAllTodos(result).then(() => removedItems.length);
+    //         });
+    // }
+
+
   /**
    * @param {string} todoId
    * @param {string} commentText

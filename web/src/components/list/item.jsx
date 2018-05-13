@@ -33,7 +33,7 @@
           <p>
             <span>
               <i
-                className={`fa fa-heart ${isLiked ? "fa-heart-active" : ""}`}
+                className={`fa fa-heart ${isLiked ? "fa-heart-active" : "fa-heart-passive"}`}
                 onClick={() => onClickLike(id)}
               />
             </span>

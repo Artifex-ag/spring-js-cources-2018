@@ -12,7 +12,7 @@ export const data = [
     title: "Do some work 2",
     description: "It was awsome 2",
     completed: true,
-    isLiked: false,
+    isLiked: true,
     comments: ["hard stuff"]
   },
   {
